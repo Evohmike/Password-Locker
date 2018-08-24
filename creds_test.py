@@ -8,8 +8,7 @@ class TestCredentials(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_credentials = Credentials("Evoh","Evohmike","evohmike@py.com","12345")
-
+        self.new_credentials = Credentials("Evoh", "Evohmike", "evohmike@py.com", "12345")
 
     def tearDown(self):
         '''
@@ -31,17 +30,17 @@ class TestCredentials(unittest.TestCase):
         Test if the credentials objects are saved into the credentials list
         '''
         self.new_credentials.save_credentials()
-        self.assertEqual(len(Credentials.credentials_list),1)
+        self.assertEqual(len(Credentials.credentials_list), 1)
 
     def test_save_multiple_credentials(self):
         '''
         This checks if we can save multiple credentials objects into the credentials list.
         '''
         self.new_credentials.save_credentials()
-        test_credentials = Credentials("Peter","petero","peter@py.com","abcdef")
+        test_credentials = Credentials("Peter", "petero", "peter@py.com", "abcdef")
         test_credentials.save_credentials()
-        self.assertEqual(len(Credentials.credentials_list),2)
+        self.assertEqual(len(Credentials.credentials_list), 2)
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     unittest.main()
