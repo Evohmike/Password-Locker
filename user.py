@@ -22,7 +22,7 @@ class User:
     @classmethod
     def user_login (cls, login):
         '''
-        entialThis is a method in which a user can check his creds
+        This is a method in which a user can check his credentials
         '''
         for User in cls.user_list:
             if User.login_name == login:
