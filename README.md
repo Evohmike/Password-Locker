@@ -6,7 +6,7 @@
 
 #### By **Evoh Mike:**
 ## Description
-###### Password_Locker is a python based application that lets you save the passwords to your various social media accounts and also can generate new secure ones for you .
+##### Password_Locker is a python based application that lets you save the passwords to your various social media accounts and also can generate new secure ones for you .
    Users of Password_Locker are first required to create an account to the python app itself whereby they will be required to enter their credentials such as Name Email address and password.The User will the be required to confirm their password by reentering it.If the password is wrong then they will not be granted access  but if it is right then they will.The users interacting with the programme can save passwords,search for other users and etc.
  
 ## Installation Requirements
