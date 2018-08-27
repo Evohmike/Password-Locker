@@ -64,7 +64,7 @@ def generate_password(password_length):
 
 
 def main():
-    print("HELLO! WELCOME TO PASSWORD LOCKER!!")
+    print("HELLO!! WELCOME TO PASSWORD LOCKER!!")
     while True:
         print('''
               ca - create account
