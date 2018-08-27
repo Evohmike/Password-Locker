@@ -1,6 +1,6 @@
 
 import pyperclip
-# import Random
+import Random
 
 class Credentials:
     '''
