@@ -35,21 +35,21 @@ class TestCredentials(unittest.TestCase):
 
     def test_save_multiple_credentials(self):
         '''
-		This checks if we can save multiple credentials objects into the credentials list.
-		'''
+        This checks if we can save multiple credentials objects into the credentials list.
+        '''
         self.new_credentials.save_credentials()
-		test_credentials= Credentials("peter","petero","peter@py.com","abcdef")
-		test_credentials.save_credentials()
-		self.assertEqual(len(Credentials.credentials_list), 2)
+        test_credentials= Credentials("peter","petero","peter@py.com","abcdef")
+        test_credentials.save_credentials()
+        self.assertEqual(len(Credentials.credentials_list), 2)
 
     def test_delete_credentials(self):
-		'''
-		Tests if we can remove credential from Credentials list
-	    '''
-	    self.new_credentials.save_credentials()
-		test_credential= Credentials("peter", "petero","peter@py.com","abcdef")
-		test_credentials.save_credentials
-		self.assertEqual(len(Credentials.credentials_list), 1)
+        '''
+        Tests if we can remove credential from Credentials list
+        '''
+        self.new_credentials.save_credentials()
+        test_credential= Credentials("peter", "petero","peter@py.com","abcdef")
+        test_credential.save_credentials()
+        self.assertEqual(len(Credentials.credentials_list), 2)
 
     
     def test_find_credentials_by_user_name(self):
@@ -64,8 +64,39 @@ class TestCredentials(unittest.TestCase):
 
         found_credentials = Credentials.find_by_user_name("omosh")
 
-        self.assertEqual(found_credentials.email, test_credentials.email
+        self.assertEqual(found_credentials.email, test_credentials.email)
 
     
+    def test_credentials_exist(self):
+        '''
+         this checks if a credentials exist and return a boolean
+        '''
+
+        self.new_credentials.save_credentials()
+        test_credentials = Credentials("omondi", "omosh", "omosh@gmail", "omosh12")
+        test_credentials.save_credentials()
+
+        credentials_exist = Credentials.credentials_exist
+        self.assertTrue(credentials_exist)
+
+
+    def test_display_all_credentials(self):
+        '''
+        test method that returns a list of all the credentials saved.
+        '''
+
+        self.assertEqual(Credentials.display_credentials(), Credentials.credentials_list)
+
+
+    # def test_copy_account(self):
+    #     '''
+    #     Test to confirm that we are copying account credentials found
+    #     '''
+
+    #     self.new_credentials.save_credentials()
+    #     Credentials.copy_username("Mike")
+
+    #     self.assertEqual(self.new_credentials.account_name, pyperclip.paste())
+
 if __name__ == '__main__':
     unittest.main()
