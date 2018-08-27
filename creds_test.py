@@ -38,7 +38,7 @@ class TestCredentials(unittest.TestCase):
 		This checks if we can save multiple credentials objects into the credentials list.
 		'''
         self.new_credentials.save_credentials()
-		test_credentials= Credentials("peter", "petero", "peter@py.com", "abcdef")
+		test_credentials= Credentials("peter","petero","peter@py.com","abcdef")
 		test_credentials.save_credentials()
 		self.assertEqual(len(Credentials.credentials_list), 2)
 
@@ -47,7 +47,7 @@ class TestCredentials(unittest.TestCase):
 		Tests if we can remove credential from Credentials list
 	    '''
 	    self.new_credentials.save_credentials()
-		test_credential= Credentials("peter", "petero", "peter@py.com", "abcdef")
+		test_credential= Credentials("peter", "petero","peter@py.com","abcdef")
 		test_credentials.save_credentials
 		self.assertEqual(len(Credentials.credentials_list), 1)
 
