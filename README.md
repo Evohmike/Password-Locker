@@ -1,5 +1,5 @@
 # Password_Locker
-## Maxwell Haron
+## Evoh Mike
 #### Password_Locker is a python based program that lets you store your password and    credentials and lets also autogenerates new ones for you
 
 ## 27th August 2018 
