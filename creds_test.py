@@ -67,36 +67,5 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(found_credentials.email, test_credentials.email
 
     
-    def test_credentials_exist(self):
-        '''
-         this checks if a credentials exist and return a boolean
-        '''
-
-        self.new_credentials.save_credentials()
-        test_credentials = Credentials("omondi", "omosh", "omosh@gmail", "omosh12")
-        test_credentials.save_credentials()
-
-        credentials_exist = Credentials.credentials_exist
-        self.assertTrue(credentials_exist)
-
-
-    def test_display_all_credentials(self):
-        '''
-        test method that returns a list of all the credentials saved.
-        '''
-
-        self.assertEqual(Credentials.display_credentials(), Credentials.credentials_list)
-
-
-    def test_copy_account(self):
-        '''
-        Test to confirm that we are copying account credentials found
-        '''
-
-        self.new_credentials.save_credentials()
-        Credentials.copy_username("Max")
-
-        self.assertEqual(self.new_credentials.account_name, pyperclip.paste())
-
 if __name__ == '__main__':
     unittest.main()
