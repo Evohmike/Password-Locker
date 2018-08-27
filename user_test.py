@@ -44,7 +44,7 @@ class TestUser(unittest.TestCase):
 
     def test_login(self):
         '''
-        method to test login credentials
+        method to test login credentialss
         '''
         self.new_user.save_user()
         test_user = User("mike_onyango", "password")
