@@ -11,7 +11,6 @@ class User:
         self.login_name = login_name
         self.password = password
 
-
     def save_user(self):
         '''
         This is a method which allows the user to save input
@@ -19,6 +18,7 @@ class User:
 
         User.user_list.append(self)
 
+    
     @classmethod
     def user_login (cls, login):
         '''
