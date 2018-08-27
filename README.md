@@ -11,7 +11,7 @@
  
 ## Installation Requirements
 * Terminal
-* Good internet connection
+* Internet connection
 * Python Installation-To install python,follow the following steps
     * $ sudo add-apt-repository ppa:jonathonf/python-3.6
     * $ sudo apt-get update
