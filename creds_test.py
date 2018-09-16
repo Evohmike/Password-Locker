@@ -9,7 +9,7 @@ class TestCredentials(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_credentials= Credentials("Evoh", "Evohmike", "evohmike@py.com", "12345")
+        self.new_credentials= Credentials("Evoh", "Evohmike", "evohmike@py.com", "1234")
 
     def tearDown(self):
         '''
@@ -24,7 +24,7 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(self.new_credentials.account_name, "Evoh")
         self.assertEqual(self.new_credentials.user_name, "Evohmike")
         self.assertEqual(self.new_credentials.email, "evohmike@py.com")
-        self.assertEqual(self.new_credentials.password, "12345")
+        self.assertEqual(self.new_credentials.password, "1234")
 
     def test_save_credentials(self):
         '''
