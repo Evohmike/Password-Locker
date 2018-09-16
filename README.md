@@ -11,7 +11,7 @@
 
 ## Setup
 #### Open your terminal and run the following command:
-* git clone https://github.com/Evohmike/Password-Locker.git && cd pass-safe
+* git clone https://github.com/Evohmike/Password-Locker.git && cd Password-Locker
 * on terminal run the command ./Display.py
  
 ## Requirements to run the program
