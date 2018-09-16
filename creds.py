@@ -26,7 +26,7 @@ class Credentials:
 
     def delete_credentials(self):
         '''
-        delete_contact method deletes an object from the credentials_list
+        delete_credential method deletes an object from the credentials_list
         '''
         Credentials.credentials_list.remove(self)
 
@@ -47,7 +47,7 @@ class Credentials:
     @classmethod
     def credentials_exist(cls, name):
         '''
-        Method that check if the credentials are already on tha contact_list
+        This method checks if the credentials are already on tha contact_list
         and return true(if it exists) and false(if it does not)
         '''
         for credentials in cls.credentials_list:
