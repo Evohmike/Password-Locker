@@ -1,6 +1,6 @@
 import unittest
 import pyperclip
-from creds import Credential
+from creds import Credentials
 
 
 class TestCredentials(unittest.TestCase):
