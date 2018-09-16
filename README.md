@@ -32,3 +32,7 @@ For assistance and Queries please email evohmike@gmail.com.
 ### License
 *MIT 2018.*
 Copyright (c) 2018 **Evoh Mike**
+
+### License
+Copyright (c) 2018 [Evoh Mike](https://github.com/Evohmike/Password-Locker/blob/master/LICENSE)
+
