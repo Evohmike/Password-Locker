@@ -7,7 +7,7 @@ class TestUser(unittest.TestCase):
         '''
         method run before each test case
         '''
-        self.new_user = User("Reagandisi", "paswad")
+        self.new_user = User("Reagandisi", "passwad")
 
 
     def tearDown(self):
@@ -20,7 +20,7 @@ class TestUser(unittest.TestCase):
         method to test if our users are being instantiated correctly
         '''
         self.assertEqual(self.new_user.login_name, "Reagandisi")
-        self.assertEqual(self.new_user.password, "paswad")
+        self.assertEqual(self.new_user.password, "passwad")
 
 
 
