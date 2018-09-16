@@ -1,13 +1,13 @@
 
 import pyperclip
-import Random
+#import Random
+
 
 class Credentials:
     '''
     This class generates user credentials
     '''
     credentials_list = []
-
 
     def __init__(self, account_name, user_name, email, password):
         '''
@@ -19,10 +19,10 @@ class Credentials:
         self.password = password
 
     def save_credentials(self):
-         '''
-         This saves credential objects into credential list
-         '''
-         Credentials.credentials_list.append(self)
+        '''
+        This saves credential objects into credential list
+        '''
+        Credentials.credentials_list.append(self)
 
     def delete_credentials(self):
         '''
@@ -32,9 +32,8 @@ class Credentials:
 
     @classmethod
     def display_credentials(cls):
-        
-        return cls.credentials_list
 
+        return cls.credentials_list
 
     @classmethod
     def find_by_user_name(cls, name):
